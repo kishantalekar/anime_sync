@@ -1,4 +1,4 @@
-import 'package:anime_sync/core/secrets/secrets.dart';
+import '../../../../secrets/secrets.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 
 class ChatService {
