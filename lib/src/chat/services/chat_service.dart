@@ -6,14 +6,9 @@ import 'package:google_generative_ai/google_generative_ai.dart';
 class ChatService {
   Future<String> sendMessage(String query, List<Message> messages) async {
     try {
-      final generationConfig = GenerationConfig(
-        maxOutputTokens: 100, // Limit the response to 100 tokens
-        // Other configuration options...
-      );
       final model = GenerativeModel(
         model: 'gemini-pro',
         apiKey: Secrets.apiKey,
-        // generationConfig: generationConfig,
       );
       final history = messages
           .map((message) => message.sender == "User"
@@ -25,7 +20,7 @@ class ChatService {
         history: history,
       );
       query +=
-          'For the above query,it should be related to anime .mostly recommending anime .';
+          'For the above query,it should be related to anime otherwise decline the query with appropriate message.';
       final content = Content.text(query);
 
       final response = await chat.sendMessage(content);

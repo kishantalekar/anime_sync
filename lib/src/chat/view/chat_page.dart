@@ -19,10 +19,8 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => ChatCubit(),
-      child: const Scaffold(
-        backgroundColor: TColors.backgroundColor,
-        body: ChatView(),
-      ),
+      child: ChatView(),
+
     );
   }
 }

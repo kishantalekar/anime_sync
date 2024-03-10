@@ -1,16 +1,26 @@
-# anime_sync
+# Anime sync
 
-A new Flutter project.
+Keeps track of all schedules of anime
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+clone my repo and then
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+    flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Schedule track
+- Live countdown
+- Personalized ai chat bot
+- Cross platform
+
+## Screenshots of the app
+
+![App Screenshot](./app_images/app_image1.png)
+
+![App Screenshot](./app_images/app_image2.png)
+
+![App Screenshot](./app_images/app_image3.png)

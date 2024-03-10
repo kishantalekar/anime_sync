@@ -66,6 +66,7 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: TColors.backgroundColor,
       appBar: AppBar(
         backgroundColor: TColors.backgroundColor,
@@ -87,6 +88,7 @@ class _HomeViewState extends State<HomeView> {
         ChatPage(),
       ]),
       bottomNavigationBar: BottomBarDefault(
+
         items: items,
         backgroundColor: TColors.backgroundColor,
         color: Colors.white,
@@ -97,6 +99,7 @@ class _HomeViewState extends State<HomeView> {
           visit = index;
         }),
       ),
+      resizeToAvoidBottomInset: false,
     );
   }
 }
