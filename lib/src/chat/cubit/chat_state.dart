@@ -22,7 +22,7 @@ class ChatInitial extends ChatState {
 }
 
 class ChatLoading extends ChatState {
-  const ChatLoading() : super(message: const []);
+  const ChatLoading({required List<Message> message}) : super(message: message);
 }
 
 class ChatLoaded extends ChatState {

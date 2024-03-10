@@ -25,6 +25,7 @@ class ScheduleChip extends StatelessWidget {
         setActive(index);
       },
       child: Chip(
+          side: BorderSide(color: isActive ? Colors.transparent : Colors.grey),
           backgroundColor: isActive ? TColors.primaryColor : null,
           shape: const OvalBorder(),
           label: Column(

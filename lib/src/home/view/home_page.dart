@@ -37,16 +37,16 @@ class HomePage extends StatelessWidget {
 
 const List<TabItem> items = [
   TabItem(
-    icon: Icons.chat_bubble,
-    // title: 'chat',
+    icon: Icons.home,
+    // title: 'Home',
   ),
   TabItem(
     icon: Icons.hourglass_bottom,
     // title: 'Countdown',
   ),
   TabItem(
-    icon: Icons.home,
-    // title: 'Home',
+    icon: Icons.chat_bubble,
+    // title: 'chat',
   ),
 ];
 
@@ -81,9 +81,11 @@ class _HomeViewState extends State<HomeView> {
           ),
         ),
       ),
-      body: IndexedStack(
-          index: visit,
-          children: const [ChatPage(), HomeBody(), CountdownPage()]),
+      body: IndexedStack(index: visit, children: const [
+        HomeBody(),
+        CountdownPage(),
+        ChatPage(),
+      ]),
       bottomNavigationBar: BottomBarDefault(
         items: items,
         backgroundColor: TColors.backgroundColor,
