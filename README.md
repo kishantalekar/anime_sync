@@ -1,4 +1,4 @@
-# Anime sync
+# Anime sync built with flutter
 
 Keeps track of all schedules of anime
 
